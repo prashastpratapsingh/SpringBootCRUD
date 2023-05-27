@@ -30,7 +30,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		
+		<dependency>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-http-jdk-client</artifactId>
+  <version>4.8.1</version>
+</dependency>
+		
+		<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.4.0</version>
+</dependency>
+        
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>

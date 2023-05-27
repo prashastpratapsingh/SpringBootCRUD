@@ -5,32 +5,35 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity // entity is used to the create a table with name "subject" in the database
-@Table(name="Subject") // the table with name subject has 2 columns that are id and name
-public class Subject {
-	
+@Table(name = "Appointment") // the table with name subject has 2 columns that are id and name
+public class Appointment {
+
 	@Id
-	private String id;
+	private String time;
 	private String name;
-	
-	public Subject() {
-		
+
+	public Appointment() {
+
 	}
-	
-	public Subject(String id, String name) {
+
+	public Appointment(String time, String name) {
 		super();
-		this.id = id;
+		this.time = time;
 		this.name = name;
 	}
-	
-	public String getId() {
-		return id;
+
+	public String gettime() {
+		return time;
 	}
-	public void setId(String id) {
-		this.id = id;
+
+	public void settime(String time) {
+		this.time = time;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
